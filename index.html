@@ -3,13 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gestión de Estudiantes</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-
-
+    <h1>Gestión de Estudiantes</h1>
+    <div>
+        <h2>Agregar Estudiante</h2>
+        <form id="agregarForm">
+            <input type="text" id="idAgregar" placeholder="ID del estudiante" required>
+            <input type="text" id="nombreAgregar" placeholder="Nombre del estudiante" required>
+            <button type="submit">Agregar</button>
+        </form>
+    </div>
+    <div>
+        <h2>Eliminar Estudiante</h2>
+        <form id="eliminarForm">
+            <input type="text" id="idEliminar" placeholder="ID del estudiante a eliminar" required>
+            <button type="submit">Eliminar</button>
+        </form>
+    </div>
+    <div>
+        <h2>Modificar Estudiante</h2>
+        <form id="modificarForm">
+            <input type="text" id="idModificar" placeholder="ID del estudiante a modificar" required>
+            <input type="text" id="nombreModificar" placeholder="Nuevo nombre del estudiante" required>
+            <button type="submit">Modificar</button>
+        </form>
+    </div>
+    <div>
+        <h2>Resumen del Curso</h2>
+        <button id="verResumen">Ver Resumen</button>
+        <pre id="resumen"></pre>
+    </div>
 
     <script src="./main.js"></script>
 </body>
